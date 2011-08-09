@@ -1,0 +1,23 @@
+A User-based Collaborative Filtering Algorithm for Delicious Link Recommendation Engine
+
+Technology: pydelicious, Python, MySQL
+distance metric: Pearson Correlation Coefficient
+
+Step-1: Using the pydelicious.py API, I build a MySQL database of users and their posts
+and a rating, 1 or 0, based on whether they have posted the url or not
+
+Step-2: Just for the fun of it, I implemented a user-based Collaborative filtering method
+details (from sarwat et. al) 
+
+The output of the algorithm is a list of recommended links for an input user of choice
+A sample output is: the link and the relative ranking indicating the user preference
+http://tele-task.de/archive/video/flash/14029/ 0.910118709912
+http://gent.ilcore.com/2011/08/finding-memory-leaks.html 0.549350785728
+http://ssssnakes.com/smoke/ 0.519390355699
+https://github.com/lojjic/PIE 0.48942992567
+https://github.com/laughinghan/choreographer 0.48942992567
+https://github.com/coolaj86/futures 0.48942992567
+https://github.com/cool-shark/redimon 0.48942992567
+https://github.com/aikar/wormhole 0.48942992567
+http://www.ipdusa.com/prodtype.asp?numRecordPosition=403 0.48942992567
+http://sound.westhost.com/project100.htm 0.48942992567
